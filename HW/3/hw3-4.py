@@ -10,12 +10,17 @@ if ( 0 < n <= 10000) and ( 0 < k <= n) and (k <= m <= m):
     # print(temp)
 
     result = []
-    result.append(*mass[:k - 1])
+
+    for i in range(0, k - 1):
+        result.append(mass[i])
     
     l = len(temp)
     for i in range(0, l):
         result.append(temp[i])
-    result.append(*mass[m:])
+    
+
+    for i in range(m, n):
+        result.append(mass[i])
     
     print(*result)
 else:
