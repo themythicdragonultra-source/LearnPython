@@ -220,6 +220,7 @@
 
 # r = int(input())
 # r = r % n
+# print(r)
 
 # arr = arr[r:] + arr[:r]
 # print(*arr)
