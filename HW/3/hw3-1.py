@@ -3,29 +3,18 @@ mass = list(map(int, input("Введите массив: ").split()))
 k, m = map(int, input("Введите k,m: ").split())
 r = int(input("Введите r: "))
 
-if ( 0 < n <= 10000) and ( 0 < k <= n) and (k <= m <= m):
+if ( 0 < n <= 10000) and ( 0 < k <= n) and (k <= m <= n):
     temp = mass[k - 1:m]
+    l = len(temp)
     # print(temp)
 
-    if (r >= 0) and (r <= n):
-        r = r
-    else:
-        r = r % n
+    r = r % l
 
     temp = temp[r:] + temp[:r]
 
     result = []
 
-    for i in range(0, k - 1):
-        result.append(mass[i])
-    
-    l = len(temp)
-    for i in range(0, l):
-        result.append(temp[i])
-    
-
-    for i in range(m, n):
-        result.append(mass[i])
+    result = mass[:k - 1] + temp + mass[m:]
     
     print(*result)
 else:
