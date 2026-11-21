@@ -224,3 +224,62 @@
 
 # arr = arr[r:] + arr[:r]
 # print(*arr)
+
+#=======================================================================
+# LESSON 4
+#=======================================================================
+
+# 1)
+# print(len(set(input().split())))
+
+# 2)
+# print(len(set(input().split()) & set(input().split())))
+
+# 3)
+# rb = set(input("Введите имена (робототехника): ").split())
+# pr = set(input("Введите имена (програмирование): ").split())
+# # print(result1)
+
+# # flag = True
+# # for i in rb:
+# #    if i not in pr:
+# #      flag=False
+# #         break
+
+# print("Оба кружка:", rb & pr)
+# print("Робототехника - часть програмирования:", rb.issubset(pr))
+# print("Ходят куда-то:", rb | pr)
+
+# 4)
+# 1 = set(input().lower())
+# 2 = set(input().lower())
+
+# print(1 - 2)
+# print(1 & 2)
+# print(len(1), len(2))
+
+# 5)
+# n = int(input())
+# mass = list(map(int, input().split()))
+# temp = set()
+# for i in mass:
+#     temp.add(i)
+# print(*temp)
+
+# Updated (5) from Lesson 3:
+# n = int(input())
+# mass = list(map(int, input().split()))
+
+# temp = set()
+# for el in mass:
+#     if el != 0:
+#         temp.add(el)
+
+# temp = list(temp)
+# for i  in range(len(mass) - len(temp)):
+#     temp.append(0)
+
+# print(*temp)
+
+
+
