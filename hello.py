@@ -281,5 +281,24 @@
 
 # print(*temp)
 
+#=======================================================================
+# LESSON 5
+#=======================================================================
 
+# a = 5
+# b = 6
 
+# print(ord("я"))
+
+# 1)
+# text = list(input())
+# shift, lap = map(int, input().split())
+# result = ""
+
+# for _ in range(lap):
+#     for i in range(len(text)):
+#         if "a" <= text[i] <= "я":
+#             text[i] += chr(ord("а") + (ord(text[i]) - ord("a") + shift) % 33)
+#         elif "А" <= text[i] <= "Я":
+#             text[i] += chr(ord("а") + (ord(text[i]) - ord("a") + shift) % 33)
+# print(result)
